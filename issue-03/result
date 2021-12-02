@@ -1,8 +1,13 @@
-Launching pytest with arguments main.py::TFT --no-header --no-summary -q in /Users/annabogoslavskaya/PycharmProjects/pythonProject
+Launching pytest with arguments /Users/annabogoslavskaya/PycharmProjects/pythonProject/main.py --no-header --no-summary -q in /Users/annabogoslavskaya/PycharmProjects/pythonProject
 
 ============================= test session starts ==============================
-collecting ... collected 0 items
+collecting ... collected 4 items
 
-============================ no tests ran in 0.01s =============================
+main.py::TFT::test_aaa_exams PASSED                                      [ 25%]
+main.py::TFT::test_cities PASSED                                         [ 50%]
+main.py::TFT::test_exception PASSED                                      [ 75%]
+main.py::TFT::test_weather PASSED                                        [100%]
 
-Process finished with exit code 5
+============================== 4 passed in 0.02s ===============================
+
+Process finished with exit code 0
