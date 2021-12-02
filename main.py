@@ -44,7 +44,7 @@ def decode(morse_message: str) -> str:
     >>> encode('ANNA') #doctest: +NORMALIZE_WHITESPACE
     '.- -. -. .-'
     >>> list(encode('A'*5)) # doctest: +ELLIPSIS
-    ['.', '-', ' ', '.', '-', ' ', '.', '-', ' ', '.', '-', ' ', '.', '-']
+    ['.', '-', ' ', '.', '-', ' ', ... ' ', '.', '-', ' ', '.', '-']
     >>> encode(21)
     Traceback (most recent call last):
     TypeError: 'int' object is not iterable
