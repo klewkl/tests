@@ -1,0 +1,8 @@
+Launching pytest with arguments main.py::TFT --no-header --no-summary -q in /Users/annabogoslavskaya/PycharmProjects/pythonProject
+
+============================= test session starts ==============================
+collecting ... collected 0 items
+
+============================ no tests ran in 0.01s =============================
+
+Process finished with exit code 5
