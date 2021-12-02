@@ -1,4 +1,4 @@
-(venv) annabogoslavskaya@MacBook-Pro-Anna pythonProject % python -m doctest -o NORMALIZE_WHITESPACE main.py -v 
+(venv) annabogoslavskaya@MacBook-Pro-Anna pythonProject %  python -m doctest -o NORMALIZE_WHITESPACE main.py -v
 Trying:
     encode('SOS') #doctest: +NORMALIZE_WHITESPACE
 Expecting:
@@ -12,7 +12,7 @@ ok
 Trying:
     list(encode('A'*5)) # doctest: +ELLIPSIS
 Expecting:
-    ['.', '-', ' ', '.', '-', ' ', '.', '-', ' ', '.', '-', ' ', '.', '-']
+    ['.', '-', ' ', '.', '-', ... '.', '-', ' ', '.', '-']
 ok
 Trying:
     encode(21)
