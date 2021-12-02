@@ -1,0 +1,35 @@
+(venv) annabogoslavskaya@MacBook-Pro-Anna pythonProject % pip install -U pytest 
+Collecting pytest
+  Downloading pytest-6.2.5-py3-none-any.whl (280 kB)
+     |████████████████████████████████| 280 kB 1.5 MB/s 
+Collecting attrs>=19.2.0
+  Downloading attrs-21.2.0-py2.py3-none-any.whl (53 kB)
+     |████████████████████████████████| 53 kB 3.4 MB/s 
+Collecting toml
+  Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Collecting pluggy<2.0,>=0.12
+  Downloading pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
+Collecting py>=1.8.2
+  Downloading py-1.11.0-py2.py3-none-any.whl (98 kB)
+     |████████████████████████████████| 98 kB 7.4 MB/s 
+Collecting iniconfig
+  Downloading iniconfig-1.1.1-py2.py3-none-any.whl (5.0 kB)
+Collecting packaging
+  Downloading packaging-21.3-py3-none-any.whl (40 kB)
+     |████████████████████████████████| 40 kB 7.0 MB/s 
+Collecting pyparsing!=3.0.5,>=2.0.2
+  Downloading pyparsing-3.0.6-py3-none-any.whl (97 kB)
+     |████████████████████████████████| 97 kB 7.0 MB/s 
+Installing collected packages: pyparsing, toml, py, pluggy, packaging, iniconfig, attrs, pytest
+Successfully installed attrs-21.2.0 iniconfig-1.1.1 packaging-21.3 pluggy-1.0.0 py-1.11.0 pyparsing-3.0.6 pytest-6.2.5 toml-0.10.2
+WARNING: You are using pip version 21.1.2; however, version 21.3.1 is available.
+You should consider upgrading via the '/Users/annabogoslavskaya/PycharmProjects/pythonProject/venv/bin/python -m pip install --upgrade pip' command.
+(venv) annabogoslavskaya@MacBook-Pro-Anna pythonProject % python -m pytest main.py         
+========================================================================== test session starts ===========================================================================
+platform darwin -- Python 3.9.7, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
+rootdir: /Users/annabogoslavskaya/PycharmProjects/pythonProject
+collected 3 items                                                                                                                                                        
+
+main.py ...                                                                                                                                                        [100%]
+
+=========================================================================== 3 passed in 0.01s ============================================================================
