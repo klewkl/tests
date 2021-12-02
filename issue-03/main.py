@@ -27,37 +27,37 @@ def fit_transform(*args: str) -> List[Tuple[str, List[int]]]:
 
 
 class TFT(unittest.TestCase):
-    def cities(self):
+    def test_cities(self):
         actual = ['Moscow', 'New York', 'Moscow', 'London']
         expected_city = [
-            ('Moscow', [1, 0, 0,]),
+            ('Moscow', [0, 0, 1]),
             ('New York', [0, 1, 0]),
-            ('Moscow', [1, 0, 0,]),
-            ('London', [0,  0, 1]),
+            ('Moscow', [0, 0, 1]),
+            ('London', [1,  0, 0]),
         ]
         self.assertEqual(expected_city, fit_transform(actual))
 
-    def weather(self):
+    def test_weather(self):
         weather = ['rainy', 'sunny', 'cloudy']
         expected_weather = [
-            ('rainy', [1, 0, 0]),
+            ('rainy', [0, 0, 1]),
             ('sunny', [0, 1, 0]),
-            ('cloudy', [0, 0, 1]),
+            ('cloudy', [1, 0, 0]),
         ]
 
         self.assertTrue(fit_transform(weather) == expected_weather)
 
-    def aaa_exams(self):
+    def test_aaa_exams(self):
         subject = ['SQL', 'Python', 'Stat', 'Metrics']
         expected_subject = [
-            ('SQL', [1, 0, 0, 0]),
-            ('Python', [0, 1, 0, 0]),
-            ('Stat', [0, 0, 1, 0]),
-            ('Metrics', [0, 0, 0, 1])
+            ('SQL', [0, 0, 0, 1]),
+            ('Python', [0, 0, 1, 0]),
+            ('Stat', [0, 1, 0, 0]),
+            ('Metrics', [1, 0, 0, 0])
         ]
         self.assertTrue(fit_transform(subject) == expected_subject)
 
-    def exception(self):
+    def test_exception(self):
         with self.assertRaises(TypeError):
             e = fit_transform(0)
 
