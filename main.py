@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[3]:
-
-
 import doctest
 
 """Morse Code Translator"""
@@ -45,20 +39,15 @@ def encode(message: str) -> str:
 
 def decode(morse_message: str) -> str:
     """
-           Кодирует строку в соответсвие с таблицей азбуки Морзе
-           Первый econde - обычный случай
-           Второй ecode - использование директивы
-           Третий - флаг
-           Четвертый - отработка exception
-           >>> encode(message='SOS')
-           '... --- ...'
-           >>> encode(message='SOS ') # doctest: +NORMALIZE_WHITESPACE
-           '... --- ... '
-           >>> encode(message='SOS SOS SOS SOS SOS') # doctest: +ELLIPSIS
-           '... --- ... ... ... --- ...'
-           >>> encode(message=0)
-           Traceback (most recent call last):
-           TypeError: 'int' object is not iterable
+   >>> encode('SOS') #doctest: +NORMALIZE_WHITESPACE
+   '... --- ...'
+    >>> encode('ANNA') #doctest: +NORMALIZE_WHITESPACE
+    '.- -. -. .-'
+    >>> list(encode('A'*5)) # doctest: +ELLIPSIS
+    ['.', '-', ' ', '.', '-', ' ', '.', '-', ' ', '.', '-', ' ', '.', '-']
+    >>> encode(21)
+    Traceback (most recent call last):
+    TypeError: 'int' object is not iterable
        """
     decoded_letters = [
         MORSE_TO_LETTER[letter] for letter in morse_message.split()
