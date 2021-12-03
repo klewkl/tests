@@ -39,7 +39,7 @@ def encode(message: str) -> str:
 
 def decode(morse_message: str) -> str:
     """
-   >>> encode('SOS') #doctest: +NORMALIZE_WHITESPACE
+   >>> encode('SOS')
    '... --- ...'
     >>> encode('ANNA') #doctest: +NORMALIZE_WHITESPACE
     '.- -. -. .-'
